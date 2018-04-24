@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateEvent.controllers.MainController">
+   <children>
+      <AnchorPane fx:id="topAnchor" minHeight="100.0" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #2f3640;">
+         <children>
+            <HBox alignment="CENTER" layoutX="420.0" prefHeight="100.0" prefWidth="1200.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <ToggleButton mnemonicParsing="false" onAction="#openEvent" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #40739e;" text="Wydarzenie" textFill="#dcdde1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="TopMenuButtonsGroup" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton mnemonicParsing="false" onAction="#openPrelegents" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #40739e;" text="Prelegenci" textFill="#dcdde1" toggleGroup="$TopMenuButtonsGroup">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></ToggleButton>
+                  <ToggleButton mnemonicParsing="false" onAction="#openRooms" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #40739e;" text="Sale" textFill="#dcdde1" toggleGroup="$TopMenuButtonsGroup">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></ToggleButton>
+                  <ToggleButton mnemonicParsing="false" onAction="#openLectures" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #40739e;" text="Prelekcje" textFill="#dcdde1" toggleGroup="$TopMenuButtonsGroup">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></ToggleButton>
+                  <ToggleButton mnemonicParsing="false" onAction="#openPreview" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #40739e;" text="Podgląd" textFill="#dcdde1" toggleGroup="$TopMenuButtonsGroup">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="centerAnchor" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #353b48;" />
+   </children>
+</VBox>

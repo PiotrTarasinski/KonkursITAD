@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #353b48;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateEvent.controllers.RoomsController">
+   <children>
+      <JFXListView fx:id="roomList" depth="20" layoutX="750.0" layoutY="79.0" onMouseClicked="#roomListClicked" prefHeight="399.0" prefWidth="300.0" showTooltip="true" style="-fx-background-color: #2f3640;" AnchorPane.bottomAnchor="221.8" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="79.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXListView>
+      <JFXButton fx:id="roomAddButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="906.0" layoutY="488.0" onAction="#roomAdd" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="DODAJ" textFill="WHITE" AnchorPane.bottomAnchor="167.6" AnchorPane.rightAnchor="154.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="roomRemoveButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="750.0" layoutY="486.0" onAction="#roomRemove" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="USUŃ" textFill="WHITE" AnchorPane.bottomAnchor="167.6" AnchorPane.rightAnchor="310.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="600.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="6.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="593.6" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="750.0" layoutY="41.0" prefWidth="300.0" text="LISTA SAL:" textFill="WHITE" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="41.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="41.0" prefWidth="300.0" text="NAZWA SALI:" textFill="WHITE" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="41.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="roomName" alignment="CENTER" layoutX="150.0" layoutY="88.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #2f3640;" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="88.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="roomSaveButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="196.0" layoutY="241.0" onAction="#roomSave" prefHeight="70.0" prefWidth="213.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="ZAPISZ" textFill="WHITE" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="241.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

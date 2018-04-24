@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #353b48;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateEvent.controllers.EventController">
+   <children>
+      <Label layoutX="131.0" layoutY="56.0" text="LOGO:" textFill="WHITE" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="56.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="eventLogo" fitHeight="200.0" fitWidth="200.0" layoutX="60.0" layoutY="96.0" onMouseClicked="#setEventLogo" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="940.0" AnchorPane.topAnchor="96.0">
+         <image>
+            <Image url="@../images/plus.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="320.0" layoutY="56.0" prefWidth="320.0" text="NAZWA WYDARZENIA:" textFill="WHITE" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="560.0" AnchorPane.topAnchor="56.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="eventName" alignment="CENTER" layoutX="320.0" layoutY="97.0" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #2f3640;" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="560.0" AnchorPane.topAnchor="97.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="320.0" layoutY="170.0" prefWidth="320.0" text="LOKALIZACJA:" textFill="WHITE" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="560.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="eventLocalization" layoutX="320.0" layoutY="220.0" prefHeight="100.0" prefWidth="320.0" style="-fx-background-color: #2f3640;" wrapText="true" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="560.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextArea>
+      <Label alignment="CENTER" layoutX="880.0" layoutY="56.0" prefWidth="260.0" text="DATA:" textFill="WHITE" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="56.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="eventDate" layoutX="880.0" layoutY="97.0" prefHeight="50.0" prefWidth="260.0" style="-fx-background-color: #2f3640;" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="97.0" />
+      <Label layoutX="880.0" layoutY="170.0" prefWidth="260.0" text="GODZINA ROZPOCZĘCIA:" textFill="WHITE" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="eventTimeStart" layoutX="880.0" layoutY="195.0" prefHeight="50.0" prefWidth="260.0" style="-fx-background-color: #2f3640;" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="195.0" />
+      <Label layoutX="880.0" layoutY="250.0" prefWidth="260.0" text="GODZINA ZAKOŃCZENIA:" textFill="WHITE" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="eventTimeEnd" layoutX="880.0" layoutY="274.0" prefHeight="50.0" prefWidth="260.0" style="-fx-background-color: #2f3640;" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="274.0" />
+      <Label alignment="CENTER" layoutX="60.0" layoutY="355.0" prefWidth="820.0" text="OPIS:" textFill="WHITE" AnchorPane.bottomAnchor="313.8" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="320.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="eventAcceptButton" buttonType="RAISED" layoutX="1006.0" layoutY="594.0" onAction="#eventAccept" prefHeight="59.0" prefWidth="143.0" style="-fx-background-color: #2ecc71; -fx-border-radius: 15px; -fx-background-radius: 15px;" text="AKCEPTUJ" textFill="WHITE" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="eventDescription" layoutX="60.0" layoutY="396.0" prefHeight="252.0" prefWidth="820.0" style="-fx-background-color: #2f3640;" wrapText="true" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="320.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXTextArea>
+      <Label fx:id="erroxText" alignment="TOP_RIGHT" layoutX="897.0" layoutY="363.0" prefHeight="222.0" prefWidth="240.0" textFill="#e74c3c" wrapText="true" AnchorPane.bottomAnchor="142.0" AnchorPane.rightAnchor="63.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
